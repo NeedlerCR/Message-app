@@ -1,4 +1,4 @@
-name: Build EXE
+name: Build Windows EXE
 
 on:
   workflow_dispatch:
@@ -15,9 +15,10 @@ jobs:
           node-version: 20
 
       - run: npm install
+
       - run: npx electron-builder --win portable
 
       - uses: actions/upload-artifact@v4
         with:
-          name: my-app
+          name: windows-exe
           path: dist/*.exe
