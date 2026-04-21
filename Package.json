@@ -1,0 +1,12 @@
+{
+  "name": "urlapp",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "dist": "electron-builder --win portable"
+  },
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^24.13.3"
+  }
+}
